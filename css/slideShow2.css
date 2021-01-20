@@ -1,0 +1,33 @@
+
+.leftSlide{
+    width: 800px;
+    height: 260px;
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+.leftSlide .items1{
+    width: 800px;
+    height: 260px;
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+.items1 img{
+    width: 196px;
+    height: 100%;
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+.items2{
+    height: 260px;
+    width: 190px;
+    overflow: hidden;
+}
+.items2 img{
+    height: 100%;
+}
+.rightSlide{
+    margin-left: 10px;
+}

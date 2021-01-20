@@ -1,0 +1,31 @@
+<link rel="stylesheet" href="./css/useSlideShow.css">
+
+<div class="wrapper">
+    <div class="item item1">
+        <img src="./images/dceffb4a35aeb199.jpg.webp" alt="">
+    </div>
+    <div class="item item2">
+        <img src="./images/3386a91c11739b2c.jpg.webp" alt="">
+    </div>
+    <div class="item item3">
+        <img src="./images/4bba60fbc4e996c9.jpg.webp" alt="">
+    </div>
+    <div class="item item4">
+        <img src="./images/9b318ff822a7864d.jpg.webp" alt="">
+    </div>
+</div>
+
+
+
+<script>
+    $('.wrapper').slideshow({
+        content: $('.item'),
+        height: 480,
+        width: 590,
+        type: 'animate',
+        autoSlide:'auto',
+        showBtn: 'always',
+        changeTime: 1000,
+        showSpots: 'always'
+    })
+</script>

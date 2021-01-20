@@ -1,0 +1,32 @@
+<link rel="stylesheet" href="./css/useSlideShow.css">
+
+
+<div class="wrapper-1">
+    <div class="items">
+        <img src="./images/8c7f4f68ff23f71f.jpg.webp" alt="">
+        <img src="./images/5ad87aaf3f2e50e6.jpg.webp" alt="">
+        <img src="./images/add6c26d6ec23cf6.jpg.webp" alt="">
+
+
+
+    </div>
+    <div class="items">
+        <img src="./images/a22e5518dc287435.jpg.webp" alt="">
+        <img src="./images/fb77c0f1fa77c63e.jpg.webp" alt="">
+        <img src="./images/d97a6fe302abde6a.jpg.webp" alt="">
+    </div>
+</div>
+
+
+<script>
+    $('.wrapper-1').slideshow({
+        content: $('.items'),
+        height: 480,
+        width: 190,
+        type: 'fade',
+        autoSlide:'auto',
+        showBtn: 'always',
+        changeTime: 1000,
+        showSpots: 'always'
+    })
+</script>

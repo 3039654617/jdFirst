@@ -1,0 +1,110 @@
+.margin-auto::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.margin-auto{
+    width: 160px;
+    height: 102px;
+    margin: 0 auto;
+}
+.margin-auto .logo-2{
+    height: 60px;
+    width: 60px;
+    overflow: hidden;
+    border-radius: 60px;
+    display: inline-block;
+    float: left;
+    margin-top: 6px;
+}
+.margin-auto .logo-2 img{
+    width: 100%;
+}
+.margin-auto .hi{
+    font-size: 12px;
+    display: inline-block;
+    margin-top: 15px;
+    margin-left: 5px;
+}
+.margin-auto .enter{
+    display: inline-block;
+    margin-top: 5px;
+    margin-left: 15px;
+}
+.margin-auto .enter button{
+    background-color: transparent;
+}
+.margin-auto .enter button:first-child{
+    margin-right: 5px;
+}
+.margin-auto .enter button:nth-child(3){
+    margin-left: 5px;
+}
+.margin-auto .new-people{
+    display: inline-block;
+    background-color: red;
+    color: white;
+    width: 70px;
+    height: 20px;
+    border-radius: 20px;
+    text-align: center;
+    font-size: small;
+}
+.margin-auto .member{
+    display: inline-block;
+    background-color: #000;
+    color: thistle;
+    width: 70px;
+    height: 20px;
+    border-radius: 20px;
+    text-align: center;
+    font-size: small;
+}
+.margin-auto-1{
+    height: 30px;
+    width: 184px;
+    margin-top: 10px;
+}
+.margin-auto-1{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5px;
+    margin-bottom: -10px;
+}
+.margin-auto-1 .express{
+    font: bold;
+    margin-left: 5px;
+}
+.margin-auto-1 .more{
+    color: #333;
+    margin-right: 5px;
+}
+.margin-auto-2{
+    height: 100px;
+    width: 184px;
+}
+.margin-auto-2 ul li{
+    margin-left: 15px;
+}
+.margin-auto-2 ul li span:nth-child(1){
+    color: rgb(190, 40, 13);
+}
+.margin-auto-2 ul li span:nth-child(2){
+    display: inline-block;
+    margin-left: 15px;
+}
+.margin-auto-3 ul li{
+    width: 60px;
+    margin: 10px 0 0 1px;
+    float: left;
+}
+.margin-auto-3 ul li span:first-child{
+    display: block;
+    color: brown;
+    font-size: x-large;
+}
+.margin-auto-3 ul li span{
+    text-align: center;
+    display: block;
+}
+

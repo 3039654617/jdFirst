@@ -1,0 +1,13 @@
+.left-menu{
+    margin-top: 8px;
+}
+.left-menu li{
+    list-style: none;
+    margin-left: 26px;
+}
+.left-menu li a{
+    text-decoration: none;
+}
+li a:hover{
+    color: tomato;
+}

@@ -1,0 +1,30 @@
+.header .p .fl{
+    width: 80px;
+    height: 30px;
+    list-style: none;
+    line-height: 30px;
+}
+.header .p .fr{
+    position: absolute;
+    right: 0;
+    width: 900px;
+    height: 30px;
+    list-style: none;
+    line-height: 30px;
+}
+.header .p .fr{
+    content: '';
+    display: block;
+    clear: both;
+}
+.header .p .fr li{
+    float: left;
+    margin-left: 5px;
+}
+.header .p .fr .hover-red:hover{
+    color: #f10215;
+    cursor: pointer;
+}
+.header .p .fr .red{
+    color: #f10215;
+}

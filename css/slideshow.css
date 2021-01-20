@@ -1,0 +1,67 @@
+ul,li{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.slideWrapper.my-swiper-animate{
+    overflow: hidden;
+    position: relative;
+}
+.slideWrapper.my-swiper-animate .slideContent{
+    position: absolute;
+}
+.slideWrapper.my-swiper-animate .slideContent::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.slideWrapper.my-swiper-animate .slideContent li{
+    float: left;
+}
+.slideWrapper.my-swiper-fade{
+    position: relative;
+}
+.slideWrapper.my-swiper-fade .slideContent{
+    position: relative;
+}
+.slideWrapper.my-swiper-fade .slideContent li{
+    position: absolute;
+}
+.slideWrapper .Btn{
+    width: 30px;
+    height: 30px;
+    background-color: turquoise;
+    position: absolute;
+    bottom: calc(50% - 25px);
+}
+.slideWrapper .leftBtn{
+    left: 0;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    line-height: 30px;
+}
+.slideWrapper .rightBtn{
+    right: 0;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    line-height: 30px;
+}
+.slideWrapper .spotsWrapper{
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    line-height: 50px;
+}
+.slideWrapper .spotsWrapper .spot{
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    background-color:gray;
+    border-radius: 10px;
+    margin-left: 5px;
+}
+.slideWrapper .spotsWrapper .spot-active{
+    background-color: red;
+}

@@ -1,0 +1,44 @@
+<link rel="stylesheet" href="./css/count-down-content.css">
+<h1>京东秒杀</h1>
+<i class="iconfont icon-shandian"></i>
+<p>12:00点场 倒计时</p>
+<p class="dao"></p>
+
+<script>
+    // 秒杀终止时间
+var endTime = new Date('2021-01-5 22:00:00');
+
+function countDown(endTime) {
+    var timer = setInterval(function () {
+        var newTime = new Date();
+        // 终止时间到当前时间的毫秒数  
+        var disTime = endTime.getTime() - newTime.getTime();
+        // 1000ms = 1s
+        // 获取剩余小时数
+        var hour = parseInt(disTime / 1000 / 60 / 60);
+        // 获取剩余分钟数
+        var minute = parseInt(disTime / 1000 / 60 % 60);
+        // var minute = parseInt(disTime / 1000 / 60 - hour * 60);
+        // 获取剩余秒数
+        var second = parseInt(disTime / 1000 % 60);
+        // 补位  如果只有一位数字 那么前面补零
+        if (hour < 10) {
+            hour = '0' + hour;
+        }
+        if (minute < 10) {
+            minute = '0' + minute;
+        }
+        if (second < 10) {
+            second = '0' + second;
+        }
+        if (disTime < 0) {
+            hour = minute = second = '00';
+            clearInterval(timer);   
+        }
+        var daotime =  '' + hour + ':' + minute + ':' + second ;
+        $('.dao').text(daotime);
+    }, 1000)
+}
+
+countDown(endTime)
+</script>
